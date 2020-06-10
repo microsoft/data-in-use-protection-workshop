@@ -1,5 +1,5 @@
 # "Data in use Protection Compass" Workshop
-
+![Workshop logo](github.com/microsoft/data-in-use-protection-workshop/tree/master/compass.png)
 The so-called "Data in use Protection Compass" is a complete workshop that introduces various applicable techniques to help ensuring for your (most) sensitive data in use adequate levels of confidentiality and privacy as part of your Microsoft's cloud journey or in the Edge. It is designed to help you or your "customers" whoever they are select the best suited approach(es) depending on your and/or their ultimate goals and related requirements.
 
 This project tries its best to share the big picture of the introduced domains and subjects that encompass many areas and disciplines, namely Confidential Computing (CC), Homomorphic Encryption (HE), Secure Mulit-Party Computing (MPC), and Differential Orivacy (DP).
