@@ -13,7 +13,7 @@ This project contains the following Common vs. Specific Tracks:
 * Deeper View Homomorphic Encryption (HE) Technique
 * Perspectives and Use Cases
 
-See [related tracks](https://github.com/microsoft/data-in-use-protection-compass/tree/master/decks).
+See [related tracks](https://github.com/microsoft/data-in-use-protection-workshop/tree/master/decks).
 
 ## Workshop Hands-On Labs
 
@@ -21,7 +21,7 @@ This project contains the following Hands-On Labs (HOLs):
 * Confidential Computing (CC) Hands-On Lab
 * Homomorphic Encryption (HE) Hands-On Lab
 
-See [available hands-on labs](https://github.com/microsoft/data-in-use-protection-compass/tree/master/hands-on-labs).
+See [available hands-on labs](https://github.com/microsoft/data-in-use-protection-workshop/tree/master/hands-on-labs).
 
 # Contributing
 

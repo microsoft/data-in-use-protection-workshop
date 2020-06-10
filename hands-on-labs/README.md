@@ -19,4 +19,4 @@ As such, the above hands-on labs (HOLs) do NOT provided a complete set of detail
 
 ## DevTest Lab Environment Setup Instructions for the Hands-On Labs
 
-See [Builder Scripts](https://github.com/microsoft/data-in-use-protection-compass/tree/master/devtest-labs-builder).
+See [Builder Scripts](https://github.com/microsoft/data-in-use-protection-workshop/tree/master/devtest-labs-builder).
