@@ -1,0 +1,18 @@
+name: Update Docker image
+on:
+  push:
+  pull_request:
+jobs:
+    update-docker-image:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: azure/docker-login@v1
+              with:
+                login-server: devlabs.azurecr.io
+                username: ${{ secrets.ACR_USERNAME }}
+                password: ${{ secrets.ACR_PASSWORD }}
+            - name: "Update the docker image"
+              run: |
+                docker build . -t devlabs.azurecr.io/cclab:latest
+                docker push devlabs.azurecr.io/cclab:latest

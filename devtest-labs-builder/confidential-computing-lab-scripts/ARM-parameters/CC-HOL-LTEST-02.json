@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "uksouth"
+    },
+    "networkInterfaceName": {
+      "value": "cc-hol-ltest-02417"
+    },
+    "enableAcceleratedNetworking": {
+      "value": true
+    },
+    "networkSecurityGroupName": {
+      "value": "CC-HOL-LTEST-02-nsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": [
+        {
+          "name": "SSH",
+          "properties": {
+            "priority": 300,
+            "protocol": "TCP",
+            "access": "Allow",
+            "direction": "Inbound",
+            "sourceAddressPrefix": "*",
+            "sourcePortRange": "*",
+            "destinationAddressPrefix": "*",
+            "destinationPortRange": "22"
+          }
+        }
+      ]
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "virtualNetworkId": {
+      "value": "/subscriptions/2f291b88-9ebf-4d90-836f-ae532edaa1b0/resourceGroups/CC-HOL-RG/providers/Microsoft.Network/virtualNetworks/CC-HOL-RG-vnet"
+    },
+    "publicIpAddressName": {
+      "value": "CC-HOL-LTEST-02-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "virtualMachineName": {
+      "value": "CC-HOL-LTEST-02"
+    },
+    "virtualMachineRG": {
+      "value": "CC-HOL-RG"
+    },
+    "osDiskType": {
+      "value": "Premium_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_DC2s_v2"
+    },
+    "adminUsername": {
+      "value": "[[linuxUser]]"
+    },
+    "adminPublicKey": {
+      "value": "[[sshKey]]"
+    }
+  }
+}

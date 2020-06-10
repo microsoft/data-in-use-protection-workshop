@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "networkInterfaceName": {
+      "value": "he-hol-ldev-01241"
+    },
+    "networkSecurityGroupName": {
+      "value": "HE-HOL-LDEV-01-nsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": [
+        {
+          "name": "SSH",
+          "properties": {
+            "priority": 300,
+            "protocol": "TCP",
+            "access": "Allow",
+            "direction": "Inbound",
+            "sourceAddressPrefix": "*",
+            "sourcePortRange": "*",
+            "destinationAddressPrefix": "*",
+            "destinationPortRange": "22"
+          }
+        }
+      ]
+    },
+    "subnetName": {
+      "value": "default3"
+    },
+    "virtualNetworkName": {
+      "value": "HE-HOL-RG-LDEV-vnet"
+    },
+    "addressPrefixes": {
+      "value": ["10.5.0.0/16"]
+    },
+    "subnets": {
+      "value": [
+        {
+          "name": "default3",
+          "properties": {
+            "addressPrefix": "10.5.0.0/24"
+          }
+        }
+      ]
+    },
+    "publicIpAddressName": {
+      "value": "HE-HOL-LDEV-01-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "virtualMachineName": {
+      "value": "HE-HOL-LDEV-01"
+    },
+    "virtualMachineRG": {
+      "value": "HE-HOL-RG"
+    },
+    "osDiskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D2_v3"
+    },
+    "adminUsername": {
+      "value": "[[linuxUser]]"
+    },
+    "adminPublicKey": {
+      "value": "[[sshKey]]"
+    }
+  }
+}

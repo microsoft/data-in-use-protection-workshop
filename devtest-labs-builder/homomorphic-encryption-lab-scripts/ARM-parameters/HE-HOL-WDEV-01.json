@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "networkInterfaceName": {
+      "value": "he-hol-WDEV-0141"
+    },
+    "networkSecurityGroupName": {
+      "value": "HE-HOL-WDEV-01-nsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": [
+        {
+          "name": "RDP",
+          "properties": {
+            "priority": 300,
+            "protocol": "TCP",
+            "access": "Allow",
+            "direction": "Inbound",
+            "sourceAddressPrefix": "*",
+            "sourcePortRange": "*",
+            "destinationAddressPrefix": "*",
+            "destinationPortRange": "3389"
+          }
+        }
+      ]
+    },
+    "subnetName": {
+      "value": "default2"
+    },
+    "virtualNetworkName": {
+      "value": "HE-HOL-RG-WDEV-vnet"
+    },
+    "addressPrefixes": {
+      "value": ["10.4.3.0/24"]
+    },
+    "subnets": {
+      "value": [
+        {
+          "name": "default2",
+          "properties": {
+            "addressPrefix": "10.4.3.0/24"
+          }
+        }
+      ]
+    },
+    "publicIpAddressName": {
+      "value": "HE-HOL-WDEV-01-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "virtualMachineName": {
+      "value": "HE-HOL-WDEV-01"
+    },
+    "virtualMachineRG": {
+      "value": "HE-HOL-RG"
+    },
+    "osDiskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D2_v3"
+    },
+    "adminUsername": {
+      "value": "[[windowsUser]]"
+    },
+    "adminPassword": {
+      "value": "[[windowsPassword]]"
+    }
+  }
+}
