@@ -5,64 +5,50 @@
     "location": {
       "value": "uksouth"
     },
-    "networkInterfaceName": {
-      "value": "cc-hol-ltest-01417"
-    },
-    "enableAcceleratedNetworking": {
-      "value": true
-    },
-    "networkSecurityGroupName": {
-      "value": "CC-HOL-LTEST-01-nsg"
-    },
-    "networkSecurityGroupRules": {
-      "value": [
-        {
-          "name": "SSH",
-          "properties": {
-            "priority": 300,
-            "protocol": "TCP",
-            "access": "Allow",
-            "direction": "Inbound",
-            "sourceAddressPrefix": "*",
-            "sourcePortRange": "*",
-            "destinationAddressPrefix": "*",
-            "destinationPortRange": "22"
-          }
-        }
-      ]
-    },
-    "subnetName": {
-      "value": "default"
-    },
-    "virtualNetworkId": {
-      "value": "/subscriptions/[[subId]]/resourceGroups/[[resGroupName]]/providers/Microsoft.Network/virtualNetworks/CC-HOL-RG-vnet"
-    },
-    "publicIpAddressName": {
-      "value": "CC-HOL-LTEST-01-ip"
-    },
-    "publicIpAddressType": {
-      "value": "Dynamic"
-    },
-    "publicIpAddressSku": {
-      "value": "Basic"
-    },
-    "virtualMachineName": {
+    "vmName": {
       "value": "CC-HOL-LTEST-01"
     },
-    "virtualMachineRG": {
-      "value": "CC-HOL-RG"
-    },
-    "osDiskType": {
-      "value": "Premium_LRS"
-    },
-    "virtualMachineSize": {
-      "value": "Standard_DC2s_v2"
+    "osImageName": {
+      "value": "18_04-lts-gen2"
     },
     "adminUsername": {
       "value": "[[linuxUser]]"
     },
-    "adminPublicKey": {
+    "adminPasswordOrKey": {
       "value": "[[sshKey]]"
+    },
+    "authenticationType": {
+      "value": "sshPublicKey"
+    },
+    "vmSize": {
+      "value": "Standard_DC1s_v2"
+    },
+    "virtualNetworkNewOrExisting": {
+      "value": "new"
+    },
+    "virtualNetworkName": {
+      "value": "CC-HOL-LTEST-01-vnet01"
+    },
+    "vnetPrefixes": {
+      "value": "10.4.4.0/24"
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "subnetPrefix": {
+      "value": "10.4.4.0/24"
+    },
+    "virtualNetworkResourceGroupName": {
+      "value": "CC-HOL-RG"
+    },
+    "inboundPorts": {
+      "value": "enable"
+    },
+    "bootDiagnostics": {
+      "value": "Disabled"
+    },
+    "osDiskType": {
+      "value": "Premium_LRS"
     }
   }
 }

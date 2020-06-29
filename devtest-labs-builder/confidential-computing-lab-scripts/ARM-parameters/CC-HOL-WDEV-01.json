@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": {
-      "value": "uksouth"
+      "value": "westeurope"
     },
     "networkInterfaceName": {
-      "value": "cc-hol-wdev-01334"
+      "value": "cc-hol-wdev-01480"
     },
     "networkSecurityGroupName": {
       "value": "CC-HOL-WDEV-01-nsg"
@@ -35,14 +35,14 @@
       "value": "CC-HOL-RG-vnet"
     },
     "addressPrefixes": {
-      "value": ["172.16.0.0/24"]
+      "value": ["10.4.3.0/24"]
     },
     "subnets": {
       "value": [
         {
           "name": "default",
           "properties": {
-            "addressPrefix": "172.16.0.0/24"
+            "addressPrefix": "10.4.3.0/24"
           }
         }
       ]
@@ -57,6 +57,9 @@
       "value": "Basic"
     },
     "virtualMachineName": {
+      "value": "CC-HOL-WDEV-01"
+    },
+    "virtualMachineComputerName": {
       "value": "CC-HOL-WDEV-01"
     },
     "virtualMachineRG": {

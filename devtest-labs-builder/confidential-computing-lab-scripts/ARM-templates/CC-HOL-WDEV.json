@@ -38,6 +38,9 @@
     "virtualMachineName": {
       "type": "string"
     },
+    "virtualMachineComputerName": {
+      "type": "string"
+    },
     "virtualMachineRG": {
       "type": "string"
     },
@@ -156,9 +159,9 @@
             }
           },
           "imageReference": {
-            "publisher": "MicrosoftVisualStudio",
-            "offer": "VisualStudio",
-            "sku": "VS-2017-Comm-Latest-WS2016",
+            "publisher": "MicrosoftWindowsServer",
+            "offer": "WindowsServer",
+            "sku": "2019-Datacenter-with-Containers",
             "version": "latest"
           }
         },
@@ -170,7 +173,7 @@
           ]
         },
         "osProfile": {
-          "computerName": "[parameters('virtualMachineName')]",
+          "computerName": "[parameters('virtualMachineComputerName')]",
           "adminUsername": "[parameters('adminUsername')]",
           "adminPassword": "[parameters('adminPassword')]",
           "windowsConfiguration": {

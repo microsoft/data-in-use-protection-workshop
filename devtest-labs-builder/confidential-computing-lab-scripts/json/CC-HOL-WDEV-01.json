@@ -1,10 +1,14 @@
 {
   "timestamp": "2020-05-13T18:27:35",
   "description": "CC - Lab",
+  "publisher": "ArnaudJumelet",
   "osType": "Windows",
   "imageName": "CC-HOL-WDEV-01",
   "vhdFileName": "CC-HOL-WDEV-01",
-  "size": "Standard_D2_v2",
+  "size": "Standard_D2_v3",
   "storageType": "Standard",
+  "OsState": "Generalized",
+  "HyperVGeneration": "V1",
   "dnsServer": ""
 }
+
