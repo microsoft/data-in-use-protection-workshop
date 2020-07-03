@@ -1,4 +1,6 @@
 
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 #Provide Shared Access Signature (SAS) expiry duration in seconds e.g. 3600.
 #Know more about SAS here: https://docs.microsoft.com/en-us/Az.Storage/storage-dotnet-shared-access-signature-part-1
 $sasExpiryDuration = "3600"

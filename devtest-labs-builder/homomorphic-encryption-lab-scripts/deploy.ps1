@@ -1,4 +1,5 @@
-
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 # Script settings, no reason to change those
 $dirRoot = Get-Location
 $templatesDir = "$dirRoot/ARM-templates"

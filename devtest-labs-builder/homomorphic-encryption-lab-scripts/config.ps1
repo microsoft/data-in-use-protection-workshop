@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 # Please adapt these variables to your needs
 
 # Resource Group name to create
