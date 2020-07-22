@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 disk-shrinker
 ARM-generated-templates/*
 disk-shrinker*

@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 FROM alpine:3.9 AS installer-env
 
 # Define Args for the needed to add the package
