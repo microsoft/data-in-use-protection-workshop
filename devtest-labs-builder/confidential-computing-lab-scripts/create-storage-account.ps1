@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
 $dirRoot = Get-Location
 . $dirRoot/config.ps1
 
